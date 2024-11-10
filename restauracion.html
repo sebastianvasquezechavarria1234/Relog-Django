@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restauración</title>
+    <link rel="stylesheet" href="./css/global.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="absolute z-40 w-full p-[20px] text-white">
+        <nav class="flex justify-between items-center">
+            <ul class="flex gap-[50px]">
+                <li>
+                    <a href="">Catalogo</a>
+                </li>
+                <li>
+                    <a href="./restauracion.html">Restauración</a>
+                </li>
+            </ul>
+            <ul>
+                <img 
+                    class="w-[50px]"
+                    src="./img/logo.png" 
+                    alt="logo">
+            </ul>
+            <ul class="flex gap-[50px]">
+                <li>
+                    <a href="">Contacto</a>
+                </li>
+                <li>
+                    <a href="">Cerrar sesion</a>
+                </li>
+
+            </ul>
+        </nav>
+    </header>    
+
+     <!-- SECTION HERO -->
+    <section 
+        class="w-full h-[50vh] relative">
+        <img 
+            class="w-full h-full object-cover object-center"
+            src="./img/restauracion.avif" 
+            alt="">
+
+     <!-- BG GRADIENT -->
+     <div 
+         class="hero__gradient absolute w-full h-full top-0 left-0 text-white flex items-end">
+         <article 
+             class="max-w-[600px] mx-auto px-[20px] pb-[0px] text-center">
+             <h1 class="text-[3rem] font-bold leading-[50px] mb-[25px]">
+                Recupera la Historia y Precisión de Tu Tiempo
+             </h1>
+
+         </article>
+
+     </div>
+    </section>
+
+    <!-- MAX WIDTH -->
+    <section class="max-w-[1000px] mx-auto px-[20px] mt-[120px] pb-[120px] flex flex-col gap-[50px]">
+        <!-- PASO 1 -->
+        <section class="grid grid-cols-2 items-center gap-[40px]">
+            <!-- PICTURE -->
+            <picture>
+                <img 
+                    class="clip__path w-full"
+                    src="./img/restauracion-1.avif" 
+                    alt="">
+            </picture>
+            <!-- PASO 1 TT -->
+            <article>
+                <h2 class="bg-gray-100 inline-flex w-[50px] h-[50px] flex justify-center items-center text-[2rem] rounded-[10px] mb-[20px]">
+                    1
+                </h2>
+                <h1 class="font-bold text-[3rem] leading-[40px] mb-[20px]">
+                    Diagnóstico
+                </h1>
+                <p>Un relojero especializado analiza el motivo por el que el reloj ha sido sometido a mantenimiento e identifica el reloj a partir de su número de serie único.</p>
+            </article>
+        </section>
+
+        <!-- PASO 2 -->
+        <section class="grid grid-cols-2 items-center gap-[40px]">
+            <!-- PASO 1 TT -->
+            <article>
+                <h2 class="bg-gray-100 inline-flex w-[50px] h-[50px] flex justify-center items-center text-[2rem] rounded-[10px] mb-[20px]">
+                    2
+                </h2>
+                <h1 class="font-bold text-[3rem] leading-[40px] mb-[20px]">
+                    Desmontaje de la caja
+                </h1>
+                <p>Desmontaje de la caja y sus componentes (cristal, fondo, bisel, juntas varias, etc.) y separación del movimiento.</p>
+            </article>
+            <!-- PICTURE -->
+            <picture>
+                <img 
+                    class="clip__path w-full"
+                    src="./img/restauracion-2.avif" 
+                    alt="">
+            </picture>
+        </section>
+    </section>
+    
+
+    <!-- TAILWIND -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</body>
+</html>
