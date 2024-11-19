@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin | Relojes antiguos | Añadir</title>
+    <link rel="stylesheet" href="../css/globalAdmin.css">
+</head>
+<body class="pb-[120px]">
+
+  <!-- HEADER -->
+  <header class="sticky top-0 z-40 w-full bg-white shadow-lg px-[30px]">
+    <nav class="flex justify-between items-center">
+        <ul class="flex gap-[50px]">
+            <li>
+                <a href="./renovacion.html">Renovaciones</a>
+            </li>
+            <li>
+                <a href="./clientes.html">Clientes</a>
+            </li>
+        </ul>
+        <ul class="absolute left-[50%] translate-x-[-50%]">
+            <img 
+                class="w-[50px]"
+                src="../img/logo.png" 
+                alt="logo">
+        </ul>
+        <ul class="flex items-center gap-[50px]">
+            <!-- MENU -->
+            <li class="header__li">
+                <a 
+                    class="header__active py-[20px] block"
+                    href="#">Relojes</a>
+                <!-- MENU HEADER -->
+                <ul class="header__li--ul flex flex-col absolute bg-white shadow-lg top-[100%] p-[7px] rounded-[10px] gap-[5px]">
+                    <li>
+                        <a 
+                            class="p-[10px] hover:bg-gray-100 block rounded-[5px] duration-300 trasition-all"
+                            href="./relojesAntiguos.html">
+                            Relojes Antiguos
+                        </a>
+                    </li>
+                    <li>
+                        <a 
+                            class="p-[10px] hover:bg-gray-100 block rounded-[5px] duration-300 trasition-all"
+                            href="./relojesDigital.html">
+                            Relojes Digitales
+                        </a>
+                    </li>
+                    <li>
+                        <a 
+                            class="p-[10px] hover:bg-gray-100 block rounded-[5px] duration-300 trasition-all"
+                            href="./relojesColeccion.html">
+                            Nueva colecion
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="">Cerrar sesión</a>
+            </li>
+
+        </ul>
+    </nav>
+</header>
+
+     <!-- TITLE DONDE SE ENCUENTRA -->
+     <div class="mb-[20px] max-w-[500px] mx-auto mt-[120px] mb-[20px]">
+        <p class="text-blue-700 italic flex items-center gap-[10px]">
+            <span class="w-[8px] h-[8px] bg-blue-700 block rounded-full"></span>
+            Relojes/Relojes Digitales/Añadir reloj
+        </p>
+    </div>
+
+    <!-- FORM -->
+    <form
+        class=" max-w-[500px] mx-auto bg-gray-100 p-[24px] rounded-[20px] shadow-lg" 
+        action="">
+        <h1 class="text-[1.5rem] uppercase font-bold text-center mb-[30px]">
+            Añade un Reloj Digital
+        </h1>
+        <!-- FORM FLEX -->
+        <div class="flex gap-[10px] w-full">
+            <!-- CAMPO MODELO -->
+            <label class="mb-[20px] w-full">
+                <h4 class="mb-[5px]">Modelo</h4>
+                <input 
+                    class="w-full p-[13px] shadow-md rounded-[8px]"
+                    type="text"
+                    placeholder="Ejem: XR32NM"
+                    required
+                    minlength="3"
+                    maxlength="20">
+            </label> 
+            <!-- CAMPO MARCA -->
+            <label class="mb-[20px] w-full">
+                <h4 class="mb-[5px]">Marca</h4>
+                <input 
+                    class="w-full p-[13px] shadow-md rounded-[8px]"
+                    type="text"
+                    placeholder="Ejem: Rolex"
+                    required
+                    minlength="3"
+                    maxlength="20">
+            </label> 
+        </div>
+        <!-- CAMPO EMAIL -->
+        <label class="mb-[20px] block">
+            <h4 class="mb-[5px]">Año</h4>
+            <input 
+                class="w-full p-[13px] shadow-md rounded-[8px]"
+                type="date"
+                required>
+        </label> 
+        <!-- FORM FLEX -->
+        <div class="flex gap-[10px] w-full">
+            <!-- CAMPO TIPO -->
+            <label class="mb-[20px] w-full">
+                <h4 class="mb-[5px]">Tipo</h4>
+                <input 
+                    class="w-full p-[13px] shadow-md rounded-[8px]"
+                    type="text"
+                    placeholder="Ejem: entero"
+                    required
+                    minlength="3"
+                    maxlength="20">
+            </label> 
+            <!-- CAMPO ESTADO -->
+            <label class="mb-[20px] w-full">
+                <h4 class="mb-[5px]">Estado</h4>
+                <input 
+                    class="w-full p-[13px] shadow-md rounded-[8px]"
+                    type="text"
+                    placeholder="Ejem: Dañado"
+                    required
+                    minlength="3"
+                    maxlength="20">
+            </label> 
+        </div>
+        <!-- Volver -->
+        <a 
+            class="underline text-blue-700 mb-[20px] block"
+            href="./relojesDigital.html">
+            Volver
+        </a>
+        <!-- SUBMIT -->
+        <input 
+            class="bg-blue-700 text-white p-[13px] rounded-[8px] w-full cursor-pointer"
+            type="submit"
+            value="Añadir Reloj Digital">
+    </form>
+    
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</body>
+</html>

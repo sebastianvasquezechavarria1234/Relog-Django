@@ -18,6 +18,10 @@ p{
     opacity: .8;
 }
 
+.bold__null{
+    font-weight: 100;
+}
+
 /*  */
 
 .ctn__grid article picture img{

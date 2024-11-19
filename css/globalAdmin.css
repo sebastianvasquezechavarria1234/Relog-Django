@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Quicksand:wght@300..700&display=swap');
+
+*{
+    font-family: "Bricolage Grotesque", sans-serif;
+    outline: none;
+}
+
+.hero__gradient{
+    background: radial-gradient(rgba(0, 0, 0, 0.13), rgba(0, 0, 0, 0.539), rgb(0, 0, 0));
+}
+
+
+a, p{
+    font-size: 18px;
+    font-weight: 300;
+}
+
+
+.bold__null{
+    font-weight: 100;
+}
+
+input{
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.109);
+}
+
+/* HEADER HOVER */
+
+.header__li--ul{
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: all .2s;
+}
+
+.header__li--ul li{
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all .3s;
+}
+
+.header__li:hover .header__li--ul{
+    transform: scaleY(1);
+}
+
+.header__li:hover .header__li--ul li{
+    transform: translateY(0px);
+    opacity: 1;
+}
+.header__li:hover .header__li--ul li:nth-child(2){
+    transition-delay: .1s;
+}
+.header__li:hover .header__li--ul li:nth-child(3){
+    transition-delay: .2s;
+}
+
+
+/* HEADER ACTIBE BTN */
+
+.header__active{
+    position: relative;
+    color: blue;
+    display: flex;
+    align-items: center;
+    padding: 0px 0px 0px 13px;
+}
+
+.header__active::before{
+    position: absolute;
+    content: "";
+    width: 8px;
+    height: 8px;
+    background-color: blue;
+    border-radius: 50%;
+    left: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+}
