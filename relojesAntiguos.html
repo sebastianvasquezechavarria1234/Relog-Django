@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin | Relojes Antiguos</title>
+    <link rel="stylesheet" href="../css/globalAdmin.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="sticky top-0 z-40 w-full bg-white shadow-lg px-[30px]">
+        <nav class="flex justify-between items-center">
+            <ul class="flex gap-[50px]">
+                <li>
+                    <a href="">Renovaciones</a>
+                </li>
+                <li>
+                    <a  href="./clientes.html">Clientes</a>
+                </li>
+            </ul>
+            <ul class="absolute left-[50%] translate-x-[-50%]">
+                <img 
+                    class="w-[50px]"
+                    src="../img/logo.png" 
+                    alt="logo">
+            </ul>
+            <ul class="flex items-center gap-[50px]">
+                <!-- MENU -->
+                <li class="header__li">
+                    <a
+                        class="header__active py-[20px] block"
+                        href="">Relojes</a>
+                    <!-- MENU HEADER -->
+                    <ul class="header__li--ul flex flex-col absolute bg-white shadow-lg top-[100%] p-[7px] rounded-[10px] gap-[5px]">
+                        <li>
+                            <a 
+                                class="p-[10px] hover:bg-gray-100 block rounded-[5px] duration-300 trasition-all"
+                                href="./relojesAntiguos.html">
+                                Relojes Antiguos
+                            </a>
+                        </li>
+                        <li>
+                            <a 
+                                class="p-[10px] hover:bg-gray-100 block rounded-[5px] duration-300 trasition-all"
+                                href="#">
+                                Relojes Digitales
+                            </a>
+                        </li>
+                        <li>
+                            <a 
+                                class="p-[10px] hover:bg-gray-100 block rounded-[5px] duration-300 trasition-all"
+                                href="#">
+                                Nueva colecion
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">Cerrar sesión</a>
+                </li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <!-- MAX WIDTH -->
+    <section class="bold__null mt-[120px] max-w-[600px] px-[20px] mx-auto">
+        <!-- TITLE DONDE SE ENCUENTRA -->
+        <div class="mb-[20px]">
+            <p class="text-blue-700 italic flex items-center gap-[10px]">
+                <span class="w-[8px] h-[8px] bg-blue-700 block rounded-full"></span>
+                Relojes/Relojes Antiguos
+            </p>
+        </div>
+        <!-- BUSCADOR AND BTN -->
+        <div class="flex mb-[20px] gap-[10px]">
+            <label class="w-[90%] relative flex items-center">
+                <span class="absolute pl-[15px]">
+                    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.5"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-search"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" /><path d="M21 21l-6 -6" /></svg>
+                </span>
+                <input
+                    class="w-full border border-gray-200 py-[13px] px-[50px] rounded-[8px]"
+                    placeholder="Buscar un usuario" 
+                    type="text">
+
+            </label>
+            <!-- AGREGAR RELOJ -->
+            <a 
+                class="bg-blue-700 w-[50px] h-[50px] flex justify-center items-center rounded-[8px] text-white" 
+                href="./relojesAntiguosAdd.html">
+                <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.5"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-clock-up"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M20.983 12.548a9 9 0 1 0 -8.45 8.436" /><path d="M19 22v-6" /><path d="M22 19l-3 -3l-3 3" /><path d="M12 7v5l2.5 2.5" /></svg>
+            </a>    
+        </div> 
+        <!-- ARTICLE CLIENTE -->
+        <article class="bg-gray-100 p-[24px] rounded-[20px] shadow-lg mb-[20px]">
+            <!-- HEADER CARD -->
+            <header class="flex items-center gap-[10px]">
+                <span class="bg-blue-100 w-[60px] h-[60px] flex justify-center items-center rounded-full text-blue-600">
+                    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="currentColor"  class="icon icon-tabler icons-tabler-filled icon-tabler-clock"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M17 3.34a10 10 0 1 1 -14.995 8.984l-.005 -.324l.005 -.324a10 10 0 0 1 14.995 -8.336zm-5 2.66a1 1 0 0 0 -.993 .883l-.007 .117v5l.009 .131a1 1 0 0 0 .197 .477l.087 .1l3 3l.094 .082a1 1 0 0 0 1.226 0l.094 -.083l.083 -.094a1 1 0 0 0 0 -1.226l-.083 -.094l-2.707 -2.708v-4.585l-.007 -.117a1 1 0 0 0 -.993 -.883z" /></svg>
+
+                </span>
+                <!-- NOMBRE DEL USUARIO -->
+                <div class="flex flex-col">
+                    <h3 class="text-[1.3rem] font-bold mb-[-2px]">
+                        Modelo
+                    </h3>
+                    <p class="font-semibold text-[14px] opacity-80">
+                        Marca
+                    </p>
+                </div>
+            </header>
+
+            <!-- BODY DATOS DE LA CARD -->
+            <div class="mt-[20px]">
+                <p class="italic">
+                    Año: 1978
+                </p>
+                <p class="italic">
+                    Tipo: este es el tipo
+                </p>
+                <p class="italic">
+                    Estado: Este es el estado
+                </p>
+            </div> 
+
+            <!-- OPTION -->
+            <div class="flex justify-end gap-[5px] mt-[20px] text-white">
+                <!-- BTN DELETE -->
+                <a
+                    href="#" 
+                    class="w-[45px] h-[45px] flex justify-center items-center bg-red-600 rounded-[8px] cursor-pointer">
+                    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.5"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-trash"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 7l16 0" /><path d="M10 11l0 6" /><path d="M14 11l0 6" /><path d="M5 7l1 12a2 2 0 0 0 2 2h8a2 2 0 0 0 2 -2l1 -12" /><path d="M9 7v-3a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v3" /></svg>
+                </a>
+                <!-- BTN UPDATE -->
+                <a
+                    href="./relojesAntiguosUpdate.html" 
+                    class="w-[45px] h-[45px] flex justify-center items-center bg-blue-700 rounded-[8px] cursor-pointer">
+                    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.5"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-clock-edit"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M21 12a9 9 0 1 0 -9.972 8.948c.32 .034 .644 .052 .972 .052" /><path d="M12 7v5l2 2" /><path d="M18.42 15.61a2.1 2.1 0 0 1 2.97 2.97l-3.39 3.42h-3v-3l3.42 -3.39z" /></svg>
+
+                </a>
+            </div>
+
+        </article>
+
+    </section> 
+
+    <!-- TAILWIND -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</body>
+</html>
